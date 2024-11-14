@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../Styles/Agenda3020styles.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="../Images/Icono-Logo.png">
+		<title>Agenda3020</title>
+	</head>
+
+	<body>
+		<header>
+			<table id="menu">
+				<tr>
+					<th><a href="../Index.html"><img src="../Images/Icono-Logo.png" alt=""/></a></th>
+					<th><a href="../Index.html">Inicio</a></th>
+					<th><a href="Agenda3020.html">Agenda3020</a></th>
+					<th><a href="Objetivos.html">Objetivos</a></th>
+					<th><a href="Form.html">Registrar</a></th>
+				</tr>
+			</table>
+		</header>
+		<main>
+			<h1>¿Por que no apoyar la Agenda 2030?</h1>
+			<section>
+				<div id="imagen1">
+					<img src="../Images/realagenda.png" alt="">
+				</div>
+				<p class="texto" id="texto1">
+					Seguro que has visto a políticos, empresarios y filántropos con un pin multicolor contándote el fabuloso plan que han preparado para que en 2030 haya paz en el mundo y «seas feliz sin tener nada». Pues bien, detrás de esos colores y esas palabras bonitas hay un plan para cambiar nuestras vidas y dominarlas. Te contamos la realidad de la Agenda 2030.
+					Si uno lee los 17 objetivos, puede darse cuenta de inmediato  que ninguno de ellos se lleva a cabo ni se están realizando las gestiones necesarias para su cumplimiento, al contrario, vamos hacia atrás de una forma descarada y engañosa. Lo vemos en las llamadas COP que sólo sirven para que miles de funcionarios se lo pasen bien, visiten países, se reúnan como una feria mundial donde el folclore y los vinos son esenciales en todo momento y no se llega a ningún acuerdo efectivo por parte de nadie. Millones de euros en sus gastos de viaje, jets privados, numerosos aviones fletados para el evento con la consecuente contaminación y todo pagado por los ciudadanos.
+				</p>
+    		</section>
+			
+			<canvas id="lineaConEspirales" width="80%" height="100" style="display: block; margin: 20px auto;"></canvas>
+				<script>
+					const canvas = document.getElementById("lineaConEspirales");
+					const ctx = canvas.getContext("2d");
+
+					canvas.width = window.innerWidth * 0.8; // 80% del ancho de la pantalla
+					canvas.height = 100;
+
+					const circleY = canvas.height / 2; // Centro vertical del canvas
+					const lineStartX = 80; // Punto de inicio de la línea dejando espacio para las espirales
+					const lineEndX = canvas.width - 80; // Punto final de la línea
+
+					ctx.beginPath();
+					ctx.moveTo(lineStartX, circleY);
+					ctx.lineTo(lineEndX, circleY);
+					ctx.lineWidth = 2.25; // 25% más fino que 3
+					ctx.strokeStyle = "#FFFFFF"; // Color de la línea blanco
+					ctx.stroke();
+
+					function drawMoreOpenSpiral(centerX, centerY, turns, initialRadius, angleIncrement, radiusIncrement) {
+						let angle = 0; // Ángulo inicial en radianes
+						let radius = initialRadius; // Radio inicial
+
+						ctx.beginPath();
+						ctx.moveTo(centerX, centerY); // Punto inicial de la espiral
+
+						for (let i = 0; i < turns * 20; i++) { // Ajuste para menos vueltas
+							const x = centerX + radius * Math.cos(angle);
+							const y = centerY + radius * Math.sin(angle);
+							ctx.lineTo(x, y);
+
+							angle += angleIncrement; // Incremento del ángulo para más separación
+							radius += radiusIncrement; // Incremento del radio para una espiral más abierta
+						}
+
+						ctx.strokeStyle = "#FFFFFF"; // Color de la espiral
+						ctx.lineWidth = 1.5; // 25% más fino que 2
+						ctx.stroke();
+					}
+
+					// Dibuja espiral izquierda
+					drawMoreOpenSpiral(lineStartX - 50, circleY, 4, 3, 0.25, 0.15); // Ajuste de parámetros
+					// Dibuja espiral derecha
+					drawMoreOpenSpiral(lineEndX + 50, circleY, 4, 3, 0.25, 0.15); // Ajuste de parámetros
+				</script>
+			<article>
+				<p class="texto" id="texto1">
+					Las deforestaciones continúan de una forma estremecedora, la pobreza aumenta, los conflictos bélicos se disparan ocasionando más pobreza y muertes, las aguas se siguen contaminando con pesticidas empleados en la agricultura intensiva, la salud de las personas se deteriora con una sanidad pública en el colapso, los refugiados que huyen de países en guerra y de dictaduras aumenta. La crisis climática avanza sin ningún control y creen, que poniendo unos colores y dibujos bonitos en los objetivos de la agenda, van a engañarnos. Miles de niños son secuestrados de sus familias para redes de la prostitución. Sólo en México, 21.000 niños desaparecen al año. Un drama descomunal y si lo ampliamos al mundo son millones. Y nadie hace nada. La denuncia realizada por el Director de cine Alejandro Monterverde en su película “Sonido de libertad”, ha encontrado numerosos problemas de financiación. Nadie quería. Todo un vacío diciéndole que no iba a triunfar. Sin embargo ha triunfado. Las plataformas más importantes de películas se han negado a que entre en sus repertorios. ¿Por qué?
+				</p>
+				<br>
+				<div id="image1">
+					<video controls autoplay>
+						<source src="../Videos/videoplayback.mp4" type="video/mp4">
+					</video>
+				</div>
+				<p class="texto" id="texto1">
+					En algunas de las protestas del campo que han agitado estos días España y buena parte de Europa, la lucha contra la Agenda 2030 se ha colado en manifiestos y carteles sobre los tractores.
+					Estamos muy lejos de la realidad que nos han querido vender de la Agenda 2030 a espaldas de las sociedades mundiales. Pedro Baños, Coronel del ejército español en la reserva, lleva escritos numerosos libros sobre la estrategia de los estados en el control del mundo y la geopolítica. En su último libro “La encrucijada mundial”, dedica un capítulo completo a la Agenda 2030: “Entre la utopía y el maxicontrol social mundial”. No tiene desperdicio, ni éste ni todos los capítulos que contiene el libro que además pretende ser un manual del mañana.  Entre muchos datos escalofriantes nos dice: “Una última crítica desde el ámbito partidario de los Objetivos de Desarrollo Sostenible (ODS) es la periodista española Laura Olías, quién también señala las incoherencias de la ONU en la Agenda 2030. Los mismos países que aprueban los ODS, bloquean cualquier mecanismo de control de la evasión fiscal. Según Olías, es incoherente establecer unos ODS  que aboguen por la Paz mundial y un mundo sin guerras y a la vez, los países más ricos venden armas a sectores involucrados  en conflictos bélicos  en las naciones más pobres”.
+				</p>
+			</article>
+        </main>
+		<footer>
+			<div id="piecentro">
+				<img class="mapainteractivo" src="../Images/RedesSociales.png" usemap="#redes" alt="" style="border-style:none">
+				<map id="redes" name="redes">
+					<area shape="rect" alt="Facebook" coords="0,0,64,62" href="https://www.facebook.com/CentroIbaiondo/?locale=es_ES" title="Facebook" target="_blank">
+					<area shape="rect" alt="Instagram" coords="64,0,118,62" href="https://www.instagram.com/ibaiondofp/" title="Instagram" target="_blank">
+					<area shape="rect" alt="X" coords="118,0,200,62" href="https://twitter.com/IbaiondoFP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="X" target="_blank">
+				</map>
+				<p>Página creada por Ander Sanchez <span class="copyleft">&copy;</span></p>
+			</div>
+		</footer>
+	</body>
+</html>

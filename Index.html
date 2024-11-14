@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="Styles/Styles.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="Images/Icono-Logo.png">
+		<title>Agenda 2030</title>
+	</head>
+	<body>
+		<header>
+			<table id="menu">
+				<tr>
+					<th><a href="Index.html"><img src="Images/Icono-Logo.png" alt=""/></a></th>
+					<th><a href="index.html">Inicio</a></th>
+					<th><a href="Pages/Agenda3020.html">Agenda3020</a></th>
+					<th><a href="Pages/Objetivos.html">Objetivos</a></th>
+					<th><a href="Pages/Form.html">Registrar</a></th>
+				</tr>
+			</table>
+		</header>
+		<main>
+			<h1 align="center" onclick="playAudio()">¿Que es la Agenda 2030?</h1>
+			<audio id="miAudio">
+				<source src="Audios/tractor-sound-ambient-farm-sounds-143615.mp3" type="audio/mpeg">
+				Tu navegador no soporta el elemento de audio.
+			</audio>
+			<script>
+				function playAudio() {
+					var audio = document.getElementById("miAudio");
+					audio.play();
+				}
+			</script>
+			<section>
+				<p class="texto">
+					Comisión Delegada del Gobierno para la Agenda 2030, que convoca a quince ministerios y cuyas competencias han quedado definidas en el ámbito del estudio, impulso, coordinación y participación en el diseño, elaboración, implementación y evaluación de los planes y estrategias para el cumplimiento por España de la Agenda 2030. Este órgano posibilita generar una coordinación interministerial amplia y está asistido por un grupo de trabajo de carácter técnico, cuya composición está abierta a la participación de todos los ministerios que conforman el Gobierno, lo cual es consecuente con las recomendaciones trasladadas desde las Naciones Unidas de integración del conjunto de esfuerzos desde un abordaje inter y multisectorial. Hasta la fecha, se han celebrado varias reuniones de esta Comisión Delegada y de su grupo de trabajo, en los meses de julio, noviembre y diciembre 2020.
+				</p>
+    		</section>
+			<article>
+				<p class="texto">
+					Conferencia Sectorial para la Agenda 2030, órgano de cooperación entre la Administración General del Estado, las comunidades autónomas, las ciudades autónomas de Ceuta y Melilla y la Administración local, a través de la Federación Española de Municipios y Provincias, para la implementación de la Agenda 2030. Una cooperación basada en el diálogo, el intercambio de experiencias y el impulso de esfuerzos conjuntos que busca maximizar el conocimiento acumulado por los distintos niveles de la administración, desde el ejercicio de las competencias atribuidas en la Constitución y los Estatutos de Autonomía. Su reglamento de funcionamiento ha contemplado, además, la creación de la Comisión Sectorial para la Agenda 2030, como órgano de apoyo y asesoramiento. Ambas instancias, Conferencia Sectorial y Comisión Sectorial para la Agenda 2030 se han reunido en dos ocasiones en los meses de julio y diciembre del pasado año.
+				</p>
+				<br>
+				<img id="imagenes" src="Images/agenda-2030 Objetivos.jpg" alt="">
+			</article>
+        </main>
+		<footer>
+			<div id="piecentro">
+				<img class="mapainteractivo" src="Images/RedesSociales.png" usemap="#redes" alt="" style="border-style:none">
+				<map id="redes" name="redes">
+					<area shape="rect" alt="Facebook" coords="0,0,64,62" href="https://www.facebook.com/CentroIbaiondo/?locale=es_ES" title="Facebook" target="_blank">
+					<area shape="rect" alt="Instagram" coords="64,0,118,62" href="https://www.instagram.com/ibaiondofp/" title="Instagram" target="_blank">
+					<area shape="rect" alt="X" coords="118,0,200,62" href="https://twitter.com/IbaiondoFP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="X" target="_blank">
+				</map>
+				<p>Página creada por Ander Sanchez <span class="copyleft">&copy;</span></p>
+			</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', (event) => {
+			const originalImage = document.querySelector('.image-container img');
+
+				if (originalImage) {
+					const originalSrc = originalImage.src;
+					const newSrc = 'Images/Imagen2.jpeg';
+
+					originalImage.addEventListener('mouseover', () => {
+						originalImage.src = newSrc;
+					});
+
+					originalImage.addEventListener('mouseout', () => {
+						originalImage.src = originalSrc;
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

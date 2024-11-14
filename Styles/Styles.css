@@ -1,0 +1,171 @@
+@charset "utf-8";
+body{
+	height:auto;
+	width: auto;
+	margin-left: 5%;
+	background-image: url("../Images/fondo.jpg");
+	}
+header{
+	height:10%;
+	width: 90%;
+	}
+#menu{
+	width: 100%;
+	background-color: rgba(0,0,0,0.47);
+	padding: 3px;
+	font-size: 12pt;
+	color: white;
+	}
+#menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    }
+#menu a:hover {
+    color: yellow;
+    }
+table img{
+	height: 50px
+	}
+main{
+	height:70%;
+	width: 90%;
+	background-color: rgba(0,0,0,0.47);
+	color: white;
+	align-items: center;
+	}
+section{
+	display: flex;
+	flex-direction: row;
+	color: white;
+	}
+article img{
+	width: 600px;
+	height: 400px;
+	text-align: center;
+	}
+.texto{
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	}
+@media (max-width:480px){
+	footer{
+		height:20%;
+		width: 90%;
+		color: white;
+		margin-top: 2%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		background-color: rgba(0,0,0,0.47);
+		}
+	footer img{
+		text-align: center;
+		width: 100%;
+		}
+	#piecentro{
+		width: 100%;
+		margin-top: 3%;
+		margin-bottom: 3%;
+		text-align: center;
+		}
+	#imagenes{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;    
+		height: 45%;            
+		width: 58%;
+		}
+	.mapainteractivo{
+		width: 175px;
+		height: 60px;
+		text-align: center;
+		}
+	.copyleft {
+		display:inline-block;
+		transform: rotate(180deg);
+		color:white;
+		}
+}
+@media (min-width:481px) and (max-width:768px){
+	footer{
+		height:20%;
+		width: 90%;
+		color: white;
+		margin-top: 2%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		background-color: rgba(0,0,0,0.47);
+		}
+	footer img{
+		text-align: center;
+		width: 100%;
+		}
+	#piecentro{
+		width: 100%;
+		margin-top: 3%;
+		margin-bottom: 3%;
+		text-align: center;
+		}
+	#imagenes{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;    
+		height: 45%;            
+		width: 58%;
+		}
+	.mapainteractivo{
+		width: 175px;
+		height: 60px;
+		text-align: center;
+		}
+	.copyleft {
+		display:inline-block;
+		transform: rotate(180deg);
+		color:white;
+		}
+}
+@media (min-width:769px){
+	footer{
+		height:20%;
+		width: 90%;
+		color: white;
+		margin-top: 2%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		background-color: rgba(0,0,0,0.47);
+		}
+	footer img{
+		text-align: center;
+		width: 100%;
+		}
+	#piecentro{
+		width: 100%;
+		margin-top: 3%;
+		margin-bottom: 3%;
+		text-align: center;
+		}
+	#imagenes{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;    
+		height: 45%;            
+		width: 58%;
+		}
+	.mapainteractivo{
+		width: 175px;
+		height: 60px;
+		text-align: center;
+		}
+	.copyleft {
+		display:inline-block;
+		transform: rotate(180deg);
+		color:white;
+		}
+	}

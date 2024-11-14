@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+<link href="../Styles/Formstyles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="../Images/Icono-Logo.png">
+	<style>
+		table tr td{
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<body>
+	<header>
+			<table id="menu">
+				<tr>
+					<th><a href="../Index.html"><img src="../Images/Icono-Logo.png" alt=""/></a></th>
+					<th><a href="../Index.html">Inicio</a></th>
+					<th><a href="Agenda3020.html">Agenda3020</a></th>
+					<th><a href="Objetivos.html">Objetivos</a></th>
+					<th><a href="Form.html">Registrar</a></th>
+				</tr>
+			</table>
+		</header>
+	<main>
+		<div id="formizquierda">
+			<table class="formulario">
+						<tr>
+							<td>
+								<form action="...." method="post">
+									Nombre: <input type="text" name="Nombre" size="20" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+									1.Apellido: <input type="text" name="Apellidos" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>	
+						<tr>
+							<td>
+								<form action="...." method="post">
+									2.Apellido: <input type="text" name="Apellidos" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+								Dirección: <input type="text" name="Direccion" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+								Código postal: <input type="text" name="Direccion" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+   									<label for="fecha_nacimiento">Selecciona Fecha de Nacimiento:<br></label><br>
+    								<input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+									Información adicional: <br>
+									<textarea name="Direccion" rows="5" cols="60" style="resize: none;"></textarea><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="reset" value="Enviar" onclick="playAudio()"/> <br><br>
+							</td>
+						</tr>
+			</table>
+		</div>
+
+		
+		<div id="formderecha">
+			<table class="formulario">
+						<tr>
+							<td>
+								<form action="...." method="post">
+									Name: <input type="text" name="Nombre" size="20" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+									Surname: <input type="text" name="Apellidos" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+									Country: <input type="text" name="Apellidos" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+								Address: <input type="text" name="Direccion" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+								Postal code: <input type="text" name="Direccion" size="30" /><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="reset" method="post">
+   									<label for="fechanacimiento">Select you Birthday:<br></label><br>
+    								<input type="date" id="fechanacimiento" name="fechanacimiento"><br><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form action="...." method="post">
+									Aditional infromation: <br>
+									<textarea name="Direccion" rows="5" cols="60" style="resize: none;"></textarea><br><br>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="reset" value="Send" onclick="playAudio()"/> <br><br>
+							</td>
+						</tr>
+
+			</table>
+		</div>
+			<audio id="miAudio">
+				<source src="../Audios/StarDrop Legendaria.mp3" type="audio/mpeg">
+				Tu navegador no soporta el elemento de audio.
+			</audio>
+			<script>
+				function playAudio() {
+					var audio = document.getElementById("miAudio");
+					audio.play();
+				}
+			</script>	
+	</main>
+	<footer>
+			<div id="piecentro">
+				<img class="mapainteractivo" src="../Images/RedesSociales.png" usemap="#redes" alt="" style="border-style:none">
+				<map id="redes" name="redes">
+					<area shape="rect" alt="Facebook" coords="0,0,64,62" href="https://www.facebook.com/CentroIbaiondo/?locale=es_ES" title="Facebook" target="_blank">
+					<area shape="rect" alt="Instagram" coords="64,0,118,62" href="https://www.instagram.com/ibaiondofp/" title="Instagram" target="_blank">
+					<area shape="rect" alt="X" coords="118,0,200,62" href="https://twitter.com/IbaiondoFP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="X" target="_blank">
+				</map>
+				<p>Página creada por Ander Sanchez <span class="copyleft">&copy;</span></p>
+			</div>
+		</footer>
+		<script>
+			document.querySelectorAll('.dropdown-content a').forEach(item => {
+				item.addEventListener('click', function(event) {
+					event.preventDefault();
+					const newFlag = this.querySelector('img').src;
+					document.querySelector('.dropbtn img').src = newFlag;
+				});
+			});
+		</script>
+	</body></body>
+</html>
